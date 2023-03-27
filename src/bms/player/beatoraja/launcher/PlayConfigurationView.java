@@ -78,6 +78,8 @@ public class PlayConfigurationView implements Initializable {
 	@FXML
     private Tab streamTab;
 	@FXML
+	private Tab multiplayerTab;
+	@FXML
 	private HBox controlPanel;
 
 	@FXML
@@ -250,6 +252,8 @@ public class PlayConfigurationView implements Initializable {
 	private TableEditorView tableController;
 	@FXML
     private StreamEditorView streamController;
+	@FXML
+	private MultiPlayerConfigurationView mpConfigController;
 
 	private Config config;
 	private PlayerConfig player;
@@ -463,6 +467,7 @@ public class PlayConfigurationView implements Initializable {
 
 		irController.update(player);
 		streamController.update(player);
+		mpConfigController.update(player);
 
 		txtTwitterPIN.setDisable(true);
 		twitterPINButton.setDisable(true);
@@ -564,6 +569,7 @@ public class PlayConfigurationView implements Initializable {
 		inputController.commit();
 		irController.commit();
 		streamController.commit();
+		mpConfigController.commit();
 
 		updatePlayConfig();
 		skinController.commit();
@@ -660,6 +666,7 @@ public class PlayConfigurationView implements Initializable {
 		otherTab.setDisable(true);
 		irTab.setDisable(true);
 		streamTab.setDisable(true);
+		multiplayerTab.setDisable(true);
 		controlPanel.setDisable(true);
 
 		MainLoader.play(null, bms.player.beatoraja.BMSPlayerMode.PLAY, true, config, player, songUpdated);

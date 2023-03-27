@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bms.player.beatoraja.launcher.MultiPlayerConfigurationView">
+	<padding>
+		<Insets left="10.0" top="10.0" />
+	</padding>
+    <HBox prefHeight="7.0" prefWidth="740.0">
+        <VBox.margin>
+            <Insets top="10.0" />
+        </VBox.margin>
+        <Label prefHeight="35.0" prefWidth="100.0" text="User Name">
+            <HBox.margin>
+                <Insets left="10.0" />
+            </HBox.margin>
+        </Label>
+        <TextField fx:id="multiplayerUser" prefHeight="24.0" prefWidth="205.0">
+            <HBox.margin>
+                <Insets />
+            </HBox.margin>
+        </TextField>
+    </HBox>
+   <HBox prefHeight="7.0" prefWidth="740.0">
+      <children>
+         <Label prefHeight="35.0" prefWidth="100.0" text="Server Address:Port">
+            <HBox.margin>
+               <Insets left="10.0" />
+            </HBox.margin>
+         </Label>
+         <TextField fx:id="multiplayerServer" prefHeight="24.0" prefWidth="205.0">
+            <HBox.margin>
+               <Insets />
+            </HBox.margin>
+         </TextField>
+      </children>
+   </HBox>
+   <HBox prefHeight="7.0" prefWidth="740.0">
+      <children>
+         <Label prefHeight="35.0" prefWidth="100.0" text="Lobby Name">
+            <HBox.margin>
+               <Insets left="10.0" />
+            </HBox.margin>
+         </Label>
+         <TextField fx:id="multiplayerLobby" prefHeight="24.0" prefWidth="205.0">
+            <HBox.margin>
+               <Insets />
+            </HBox.margin>
+         </TextField>
+      </children>
+   </HBox>
+   <HBox prefHeight="7.0" prefWidth="740.0">
+      <children>
+         <Label prefHeight="35.0" prefWidth="100.0" text="Lobby Password">
+            <HBox.margin>
+               <Insets left="10.0" />
+            </HBox.margin>
+         </Label>
+         <PasswordField fx:id="multiplayerPassword" prefHeight="24.0" prefWidth="205.0">
+            <HBox.margin>
+               <Insets />
+            </HBox.margin>
+         </PasswordField>
+      </children>
+   </HBox>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</VBox>
